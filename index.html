@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RDN Group</title>
+  <style>
+    :root {
+      --primary: #60a5fa;
+      --secondary: #2563eb;
+      --bg-gradient: linear-gradient(135deg, #0f172a, #1e293b);
+      --text-light: #f9fafb;
+      --text-muted: #cbd5e1;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+      color: var(--text-light);
+      background: var(--bg-gradient);
+      line-height: 1.6;
+    }
+    header {
+      text-align: center;
+      padding: 6rem 1rem;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.4rem;
+      font-weight: 300;
+      color: var(--text-muted);
+    }
+    section {
+      max-width: 900px;
+      margin: 3.5rem auto;
+      padding: 0 1.5rem;
+    }
+    section h2 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+      position: relative;
+    }
+    section h2::after {
+      content: "";
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--primary);
+      margin-top: 0.5rem;
+      border-radius: 2px;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .email {
+      margin-top: 1.5rem;
+      display: inline-block;
+      padding: 0.75rem 1.25rem;
+      background: #1e293b;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+      font-weight: 500;
+    }
+    .email a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    .email a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      border-top: 1px solid #1e293b;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RDN Group</h1>
+    <p>Established. Reliable. Growth-Focused.</p>
+  </header>
+
+  <section>
+    <p>
+      RDN Group is a privately-owned holding company with a track record of building 
+      successful businesses in retail, e-commerce and enterprise ventures. Our focus is 
+      on creating sustainable, long-term growth by investing in people, products, and 
+      partnerships.
+    </p>
+  </section>
+
+  <section>
+    <h2>Our Approach</h2>
+    <p>
+      We take a collaborative, long-term view of business. By combining the agility of 
+      smaller companies with the resources and expertise of our group, we create strong, 
+      sustainable brands.
+    </p>
+  </section>
+
+  <section>
+    <h2>Partner With Us</h2>
+    <p>
+      We’re always interested in new opportunities, partnerships, and product ranges that 
+      align with our vision. If you would like to discuss working together, we’d be happy 
+      to hear from you.
+    </p>
+    <div class="email">
+      📧 <a href="mailto:james.dunworth@rdngroup.com">james.dunworth@rdngroup.com</a> / 
+      <a href="mailto:jon.nelsey@rdngroup.co.uk">jon.nelsey@rdngroup.co.uk</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; <span id="year"></span> RDN Group. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
